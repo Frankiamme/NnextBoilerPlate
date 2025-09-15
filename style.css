@@ -1,0 +1,63 @@
+/* .sora-500 {
+    font-family: "Sora", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+} */
+
+body {
+    font-family: sora;
+}
+
+img {
+    max-width: 100%;
+}
+
+img[width][height] {
+    height: auto;
+    /* Preserve aspect ratio */
+}
+
+/* Let SVG scale without boundaries */
+/* img[src$=".svg"] {
+    width: 100%;
+    height: auto;
+    max-width: none;
+} */
+
+.herobordersvg{
+    border-image-source: url("./img/Heroblue.png");
+    border-image-slice: 150 95 fill;
+    /* border-image-width: 150px 95px; */
+    /* border-image-repeat: stretch round; */
+}
+
+.bordersvg{
+    border-image: url("/img/Seperator.svg") 30 / 25px stretch;
+    /* border-style: initial; */
+}
+
+.borderWhite{
+    border-image: url("/img/SeperatorWhite.svg") 30 / 25px round;
+    border-style: initial;
+}
+
+.borderWhiteReversed {
+    border-image: url("/img/SeperatorWhiteUpside.svg") 30 / 25px round;
+    border-style: initial;
+}
+
+.clipped {
+    -webkit-clip-path: url(#my-clip-path);
+    clip-path: url(#my-clip-path);
+}
+
+.sideways{
+    writing-mode: sideways-lr;
+        text-orientation: sideways;
+}
+
+.clipped2{
+    -webkit-clip-path: url(#my-clip-path2);
+        clip-path: url(#my-clip-path2);
+}
