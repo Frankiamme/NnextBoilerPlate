@@ -18,6 +18,7 @@
         <link
             href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
             rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     </head>
 
     <body class="relative mx-auto scroll-smooth md:scroll-auto overscroll-none">
@@ -26,7 +27,7 @@
             <div class="flex items-center">
                 <img src="./img/Logo.svg" class="h-12 w-auto" />
             </div>
-            <div class="hidden md:flex gap-12 uppercase font-semibold text-[#141943] font-regular text-lg">
+            <div class="hidden lg:flex gap-12 uppercase font-semibold text-[#141943] font-regular texl-md 2xl:text-lg">
                 <a href="#" class="text-gray-600 hover:text-gray-900">Services</a>
                 <a href="#" class="text-gray-600 hover:text-gray-900">Work</a>
                 <a href="#" class="text-gray-600 hover:text-gray-900">About</a>
@@ -45,20 +46,20 @@
         </nav>
 
         <!-- Hero Section -->
-        <section class="px-[2%] pt-44 bg-[url(./img/bg.png)] bg-cover bg-center bg-no-repeat">
+        <section class="px-[2%] pt-40 bg-[url(./img/bg.png)] bg-cover bg-center bg-no-repeat">
             <div
-                class="mx-auto grid md:grid-cols-2 gap-6 justify-items-center items-center bg-[url(./img/herobg2.png)] bg-cover bg-center bg-no-repeat rounded-4xl p-6 overflow-hidden">
-                <div class="flex flex-col gap-10 h-full w-full pt-[15%] px-[10%] herobordersvg">
+                class="mx-auto grid grid-cols-1 xl:grid-cols-2 gap-6 justify-items-center items-center bg-[url(./img/herobg2.png)] bg-cover bg-center bg-no-repeat rounded-4xl p-6 h-[90vh] xl:h-auto">
+                <div class="flex flex-col gap-10 h-full w-full justify-center xl:justify-start xl:pt-[15%] px-[5%] md:px-[10%] herobordersvg">
                     <div class="border-2 border-[#3343C0] rounded-full px-5 py-3 w-fit">
                         <p class="text-md text-[#B2C8E6] font-semibold">Ahoy matey, good to see you</p>
                     </div>
-                    <h1 class="text-7xl font-medium text-white leading-[1.3]">
+                    <h1 class="text-5xl md:text-6xl 2xl:text-7xl font-medium text-white leading-[1.3]">
                         We Build Websites<br>
                         <span class="font-[Playfair] font-regular italic">Tailored to Amplify</span><br>
                         Your Brand
                     </h1>
-                    <div class="flex flex-row gap-5 pt-10">
-                        <a class="bg-[#3343C0] p-3 flex flex-row gap-5 items-center rounded-full cursor-pointer">
+                    <div class="flex flex-col sm:flex-row gap-5 pt-10">
+                        <a class="bg-[#3343C0] p-3 flex flex-row gap-5 items-center rounded-full cursor-pointer w-fit">
                             <span class="text-white pl-2 font-medium">View Our Work</span>
                             <div class="bg-white rounded-full p-2">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="#3343C0"
@@ -70,7 +71,7 @@
                             </div>
                         </a>
                         <a
-                            class="border-2 border-[#4699FF] p-3 flex flex-row gap-5 items-center rounded-full cursor-pointer">
+                            class="border-2 border-[#4699FF] p-3 flex flex-row gap-5 items-center rounded-full cursor-pointer w-fit">
                             <span class="pl-2 text-[#B2C8E6] font-medium">Start a Project</span>
                             <div class="bg-[#B2C8E6] rounded-full p-2">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="#B2C8E6"
@@ -84,7 +85,8 @@
                     </div>
                 </div>
                 <!-- Placeholder for hero image/graphic -->
-                <div class="bg-[url(./img/pattern.png)] h-[960px] w-full bg-cover bg-center rounded-3xl">
+                <div
+                    class="bg-[url(./img/pattern.png)] hidden xl:block xl:h-[800px] 2xl:h-[960px] w-full bg-cover bg-center rounded-3xl">
                     <!-- <img src="./img/pattern.png" alt="Hero Image" width="848" height="952" class="rounded-3xl"> -->
                 </div>
             </div>
@@ -92,16 +94,17 @@
 
         <!-- About Section -->
         <section class="w-[90%] mx-auto mt-28 pb-6 bordersvg">
-            <div class="flex flex-row w-[90%] justify-between pb-16">
-                <div class="w-2/4">
+            <div class="flex flex-col gap-10 sm:gap-0 sm:flex-row w-[90%] sm:w-[96%] xl:w-[90%] justify-between pb-16">
+                <div class="w-full sm:w-1/2">
                     <div
                         class="flex flex-row items-center gap-4 border-2 border-[#3343C0] rounded-full px-5 py-3 w-fit">
                         <span class="w-2 h-2 bg-[#3343C0] rounded-full"></span>
                         <p class="text-sm text-[#3343C0] font-medium">WE'RE NNNEXT</p>
                     </div>
                 </div>
-                <div class="flex flex-col w-2/4 gap-16 items-start">
-                    <p class="text-5xl indent-20 tracking-light font-medium leading-[1.3]">We provide design solutions
+                <div class="flex flex-col w-full sm:w-1/2 gap-10 xl:gap-16 items-start">
+                    <p class="text-2xl xl:text-3xl 2xl:text-5xl sm:indent-20 tracking-light font-medium leading-[1.3]">We provide
+                        design solutions
                         that serve as a marketing and sales channel, helping
                         you drive traffic and capture leads.</p>
                     <a class="bg-[#3343C0] p-3 flex flex-row gap-5 items-center rounded-full">
@@ -120,7 +123,7 @@
 
         <!-- Logos Section-->
         <section class="w-[90%] mx-auto border-b-2 border-[#C2C2C2] py-28">
-            <div class="flex flex-row items-center justify-center [75%] gap-24">
+            <div class="flex flex-row items-center justify-center [75%] gap-24 autoplay">
                 <img src="./img/HK-green-logo 1.svg" class="!h-16" />
                 <img src="./img/TheHubPark.svg" class="!h-16" />
                 <img src="./img/AfricanAngelAcademy.svg" class="!h-16" />
@@ -130,102 +133,101 @@
         </section>
 
         <!-- Case studies Section-->
-        <section class="w-[90%] mx-auto py-32 flex flex-row gap-12">
-            <!-- Second Recent Cases-->
-            <div class="w-1/2 flex flex-col gap-16">
-                <div class="flex flex-col">
-                    <img src="./img/caseSample.png" class="" />
-                    <div class="pt-6 flex flex-col gap-2">
-                        <div class="flex flex-row gap-4 items-center">
-                            <span class="text-[#3343C0] text-xl font-medium">2023</span>
-                            <span class="w-2 h-2 rounded-full bg-[#3343C0]"></span>
-                            <span class="text-[#3343C0] text-xl font-medium">Yellow</span>
-                        </div>
-                        <h2 class="text-3xl font-medium">Banking, Re-imagined</h2>
-                    </div>
-                </div>
-                <div class="flex flex-col">
-                    <img src="./img/HK_Wesite.png" class="" />
-                    <div class="pt-6 flex flex-col gap-2">
-                        <div class="flex flex-row gap-4 items-center">
-                            <span class="text-[#3343C0] text-xl font-medium">2023</span>
-                            <span class="w-2 h-2 rounded-full bg-[#3343C0]"></span>
-                            <span class="text-[#3343C0] text-xl font-medium">Yellow</span>
-                        </div>
-                        <h2 class="text-3xl font-medium">Banking, Re-imagined</h2>
-                    </div>
-                </div>
-            </div>
-
+        <section class="w-[90%] mx-auto py-32 flex flex-col lg:flex-row lg:flex-row-reverse gap-12">
             <!-- Recent Cases -->
-            <div class="w-1/2 flex flex-col gap-16">
-                <h1 class="text-5xl font-semibold flex flex-col gap-3 w-10/12 self-end">
+            <div class="w-full lg:w-1/2 flex flex-col gap-16">
+                <h1 class="text-4xl 2xl:text-5xl font-semibold flex flex-col gap-3 self-center items-center lg:items-start lg:w-10/12 lg:self-end">
                     <span>Highlight from</span>
                     <span>Latest Case Studies</span>
                 </h1>
                 <div class="flex flex-col">
                     <img src="./img/HubPark.png" class="" />
                     <div class="pt-6 flex flex-col gap-2">
-                        <div class="flex flex-row gap-4 items-center">
-                            <span class="text-[#3343C0] text-xl font-medium">2023</span>
+                        <div class="flex flex-row gap-4 items-center text-md md:text-lg 2xl:text-xl font-medium text-[#3343C0]">
+                            <span class="">2023</span>
                             <span class="w-2 h-2 rounded-full bg-[#3343C0]"></span>
-                            <span class="text-[#3343C0] text-xl font-medium">Yellow</span>
+                            <span class="">Yellow</span>
                         </div>
-                        <h2 class="text-3xl font-medium">Banking, Re-imagined</h2>
+                        <h2 class="text-xl md:text-2xl 2xl:text-3xl font-medium">Banking, Re-imagined</h2>
                     </div>
                 </div>
                 <div class="flex flex-col">
                     <img src="./img/iabiri.png" class="" />
                     <div class="pt-6 flex flex-col gap-2">
-                        <div class="flex flex-row gap-4 items-center">
-                            <span class="text-[#3343C0] text-xl font-medium">2023</span>
+                        <div class="flex flex-row gap-4 items-center text-md md:text-lg 2xl:text-xl font-medium text-[#3343C0]">
+                            <span class="">2023</span>
                             <span class="w-2 h-2 rounded-full bg-[#3343C0]"></span>
-                            <span class="text-[#3343C0] text-xl font-medium">Yellow</span>
+                            <span class="">Yellow</span>
                         </div>
-                        <h2 class="text-3xl font-medium">Banking, Re-imagined</h2>
+                        <h2 class="text-xl md:text-2xl 2xl:text-3xl font-medium">Banking, Re-imagined</h2>
+                    </div>
+                </div>
+            </div>
+            <!-- Second Recent Cases-->
+            <div class="w-full lg:w-1/2 flex flex-col gap-16">
+                <div class="flex flex-col">
+                    <img src="./img/caseSample.png" class="" />
+                    <div class="pt-6 flex flex-col gap-2">
+                        <div class="flex flex-row gap-4 items-center text-md md:text-lg 2xl:text-xl font-medium text-[#3343C0]">
+                            <span class="">2023</span>
+                            <span class="w-2 h-2 rounded-full bg-[#3343C0]"></span>
+                            <span class="">Yellow</span>
+                        </div>
+                        <h2 class="text-xl md:text-2xl 2xl:text-3xl font-medium">Banking, Re-imagined</h2>
+                    </div>
+                </div>
+                <div class="flex flex-col">
+                    <img src="./img/HK_Wesite.png" class="" />
+                    <div class="pt-6 flex flex-col gap-2">
+                        <div class="flex flex-row gap-4 items-center text-md md:text-lg 2xl:text-xl font-medium text-[#3343C0]">
+                            <span class="">2023</span>
+                            <span class="w-2 h-2 rounded-full bg-[#3343C0]"></span>
+                            <span class="">Yellow</span>
+                        </div>
+                        <h2 class="text-xl md:text-2xl 2xl:text-3xl font-medium">Banking, Re-imagined</h2>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Our Approach Section-->
-        <section class="w-[96%] mx-auto pt-28 bg-[#141943] rounded-t-[128px]">
+        <section class="w-[96%] mx-auto pt-28 bg-[#141943] rounded-t-[60px] lg:rounded-t-[100px] 2xl:rounded-t-[128px]">
             <!-- Heading-->
-            <div class="relative w-[90%] mx-auto flex justify-center mb-24">
+            <div class="relative w-[90%] mx-auto flex flex-col gap-10 xl:gap-0 xl:flex-row justify-center mb-24">
                 <div
-                    class="absolute flex flex-row items-center gap-2 border-2 border-[#4699FF] rounded-full px-5 py-3 w-fit left-0">
+                    class="relative xl:absolute flex flex-row items-center self-center lg:self-start gap-2 border-2 border-[#4699FF] rounded-full px-5 py-3 w-fit left-0">
                     <span class="block w-2 h-2 bg-[#B2C8E6] rounded-full"></span>
                     <p class="text-[#B2C8E6] text-sm font-medium">OUR EXPERTISE</p>
                 </div>
-                <h2 class="text-5xl font-bold flex flex-col items-center gap-3 text-white">
+                <h2 class="text-4xl md:text-5xl 2xl:text-6xl font-bold flex flex-col items-center gap-3 text-white">
                     <span>Our Approach</span>
                     <span>To Elevating Your Brand</span>
                 </h2>
             </div>
 
             <!-- Features Wrapper-->
-            <div class="w-[96%] mx-auto rounded-t-[128px] bg-linear-to-r from-[#3343C0] to-[#192E7E] py-32">
+            <div class="w-[96%] mx-auto rounded-t-[70px] lg:rounded-t-[128px] bg-linear-to-r from-[#3343C0] to-[#192E7E] py-28 2xl:py-32">
                 <div class="w-[85%] mx-auto flex flex-col ">
-                    <div class="flex flex-row justify-between pb-10 borderWhite group pr-20">
-                        <div class="flex flex-col gap-6 justify-center text-[#61A0CD] group-hover:text-white h-[300px]">
-                            <span class="text-xl font-medium">DEFINING HOW THE WORLD SEES YOU</span>
-                            <h2 class="font-semibold text-7xl">Brand Identity</h2>
+                    <div class="flex flex-row justify-between items-center pb-10 borderWhite group pr-[5%]">
+                        <div class="flex flex-col gap-6 justify-center text-[#61A0CD] group-hover:text-white h-[200px] lg:h-[300px]">
+                            <span class="text-lg 2xl:text-xl font-medium">DEFINING HOW THE WORLD SEES YOU</span>
+                            <h2 class="font-semibold text-4xl md:text-5xl lg:text-6xl 2xl:text-7xl">Brand Identity</h2>
                         </div>
-                        <img src="./img/expertiseimg.png" class="hidden group-hover:block w-auto" />
+                        <img src="./img/expertiseimg.png" class="hidden xl:group-hover:block w-[40%] h-full" />
                     </div>
-                    <div class="flex flex-row justify-between py-10 group pr-20">
-                        <div class="flex flex-col gap-6 justify-center text-[#61A0CD] group-hover:text-white h-[300px]">
-                            <span class="text-xl font-medium">FUNCTION & AESTHETIC EXELLENCE</span>
-                            <h2 class="font-semibold text-7xl">Websites</h2>
+                    <div class="flex flex-row justify-between items-center py-10 group pr-[5%]">
+                        <div class="flex flex-col gap-6 justify-center text-[#61A0CD] group-hover:text-white h-[200px] lg:h-[300px]">
+                            <span class="text-lg 2xl:text-xl font-medium">FUNCTION & AESTHETIC EXELLENCE</span>
+                            <h2 class="font-semibold text-4xl md:text-5xl lg:text-6xl 2xl:text-7xl">Websites</h2>
                         </div>
-                        <img src="./img/expertiseimg.png" class="hidden group-hover:block w-auto" />
+                        <img src="./img/expertiseimg.png" class="hidden xl:group-hover:block w-[40%] h-full" />
                     </div>
-                    <div class="flex flex-row justify-between pt-16 borderWhiteReversed group pr-20">
-                        <div class="flex flex-col gap-6 justify-center text-[#61A0CD] group-hover:text-white h-[300px]">
-                            <span class="text-xl font-medium">FROM CLICKS TO CONVERSIONS</span>
-                            <h2 class="font-semibold text-7xl">Strategic SEO</h2>
+                    <div class="flex flex-row justify-between items-center pt-10 borderWhiteReversed group pr-20">
+                        <div class="flex flex-col gap-6 justify-center text-[#61A0CD] group-hover:text-white h-[200px] lg:h-[300px]">
+                            <span class="text-lg 2xl:text-xl font-medium">FROM CLICKS TO CONVERSIONS</span>
+                            <h2 class="font-semibold text-4xl md:text-5xl lg:text-6xl 2xl:text-7xl">Strategic SEO</h2>
                         </div>
-                        <img src="./img/expertiseimg.png" class="hidden group-hover:block w-auto" />
+                        <img src="./img/expertiseimg.png" class="hidden xl:group-hover:block w-[40%] h-full" />
                     </div>
                 </div>
             </div>
@@ -238,7 +240,7 @@
                     <span class="block w-2 h-2 bg-[#3343C0] rounded-full"></span>
                     <p class="text-[#3343C0] text-sm font-medium">HERE TO SERVE YOU</p>
                 </div>
-                <h2 class="text-6xl font-bold flex flex-col items-center gap-5 text-black">
+                <h2 class="text-4xl md:text-5xl 2xl:text-6xl font-bold flex flex-col items-center gap-3 lg:gap-4 xl:gap-5 text-black">
                     <span>End to End Solutions to</span>
                     <span>Steer Your Brand to Success</span>
                 </h2>
@@ -252,51 +254,54 @@
                     </clipPath>
                 </svg>
 
-                <div class="clipped py-40 px-[4%] bg-[#E7E7E7] flex flex-row justify-around gap-4 ">
-                    <div class="relative bg-[#c3c1d1] py-20 px-[4%] rounded-4xl w-1/2">
+                <div class="clipped py-32 lg:py-40 px-[4%] bg-[#E7E7E7] flex flex-col lg:flex-row justify-around gap-4 ">
+                    <div class="w-full lg:w-1/2 relative bg-[#c3c1d1] flex items-center py-16 2xl:py-20 px-[4%] justify-center rounded-4xl">
                         <img src="./img/circle1.png"
                             class="absolute w-auto h-full left-1/2 top-1/2 translate-x-[-50%] translate-y-[-50%] z-0" />
                         <div class="relative flex flex-col gap-10">
-                            <h3 class="font-medium text-5xl text-white flex flex-col gap-2">
+                            <h3 class="font-medium text-4xl 2xl:text-5xl text-white flex flex-col gap-2">
                                 <span>Delivering High-Quality</span>
                                 <span>Results in Record Time</span>
                             </h3>
                             <svg width="268" height="268" viewBox="0 0 268 268" fill="none"
-                                xmlns="http://www.w3.org/2000/svg" class="self-center">
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="self-center w-[170px] h-[170px] 2xl:w-[268px] 2xl:h-[268px]">
                                 <path
                                     d="M134 54.8V134L186.8 160.4M266 134C266 206.902 206.902 266 134 266C61.0984 266 2 206.902 2 134C2 61.0984 61.0984 2 134 2C206.902 2 266 61.0984 266 134Z"
                                     stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
                             </svg>
-                            <div class="flex flex-row justify-between items-end">
-                                <div class="bg-white rounded-full p-4 h-fit">
+                            <div class="flex flex-row justify-between gap-4 items-end">
+                                <div class="bg-white rounded-full p-3 2xl:p-4 h-fit">
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                        stroke-width="1.5" stroke="currentColor" class="size-6">
+                                        stroke-width="1.5" stroke="currentColor" class="size-5 2xl:size-6">
                                         <path stroke-linecap="round" stroke-linejoin="round"
                                             d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
                                     </svg>
 
                                 </div>
-                                <p class="text-white max-w-[28rem] text-2xl font-medium text-right indent-20">
+                                <p
+                                    class="text-white max-w-[28rem] text-xl 2xl:text-2xl font-medium text-right indent-20">
                                     We prioritize speed and efficiency to bring your project to life without unnecessary
                                     delays
                                 </p>
                             </div>
                         </div>
                     </div>
-                    <div class="w-1/2 flex flex-row gap-5">
+                    <div class="w-full lg:w-1/2 flex flex-row gap-5">
                         <div
                             class="w-1/2 flex bg-[url(./img/gradient1.png)] bg-cover border-4 border-white rounded-3xl">
                             <div
-                                class="bg-[#D9D9D9] rounded-t-4xl rounded-b-3xl self-end flex flex-col justify-between h-3/5 px-[12%] py-[15%]">
+                                class="bg-[#D9D9D9] rounded-t-4xl rounded-b-3xl self-end flex flex-col justify-between gap-5 lg:h-3/5 px-[12%] py-[15%]">
                                 <div class="flex justify-between">
                                     <svg width="130" height="130" viewBox="0 0 130 130" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        class="w-[90px] h-[90px] 2xl:w-[130px] 2xl:h-[130px]">
                                         <path
                                             d="M65 2V128M109.548 20.4523L20.4523 109.548M128 65H2M109.548 109.548L20.4523 20.4523"
                                             stroke="white" stroke-width="4" stroke-linecap="round"
                                             stroke-linejoin="round" />
                                     </svg>
-                                    <div class="bg-white rounded-full p-4 h-fit">
+                                    <div class="bg-white rounded-full p-3 2xl:p-4 h-fit">
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                             stroke-width="1.5" stroke="currentColor" class="size-6">
                                             <path stroke-linecap="round" stroke-linejoin="round"
@@ -305,13 +310,14 @@
 
                                     </div>
                                 </div>
-                                <p class="text-3xl text-black font-medium">From invisible to irresistible — we make it
+                                <p class="text-2xl 2xl:text-3xl text-black font-medium">From invisible to irresistible —
+                                    we make it
                                     happen.</p>
                             </div>
                         </div>
                         <div
-                            class="bg-[url(./img/gradient2.png)] bg-cover bg-no-repeat bg-center rounded-3xl w-1/2 flex p-18 justify-center">
-                            <div class="text-white font-[sora] font-bold text-6xl sideways flex flex-col">
+                            class="bg-[url(./img/gradient2.png)] bg-cover bg-no-repeat bg-center rounded-3xl w-1/2 flex p-20 lg:p-10 xl:p-18 justify-center">
+                            <div class="text-white font-[sora] font-bold text-5xl lg:text-4xl xl:text-5xl 2xl:text-6xl sideways flex flex-col">
                                 <span>We</span>
                                 <span>create solutions</span>
                                 <span>— to inspire</span>
@@ -331,34 +337,17 @@
                 </clipPath>
             </svg>
             <div
-                class="clipped2 w-[92%] flex flex-col mx-auto gap-18 items-center py-36 bg-linear-to-br from-[#71DAFE] to-[#3C94FF]">
-                <div class="flex flex-row mx-auto">
-                    <div class="bg-white rounded-full py-12 px-5 border-6 border-[#71DAFE] h-fit mt-5 z-10">
-                        <span class="text-[#141943] text-3xl font-semibold">You're</span>
+                class="clipped2 w-[92%] flex flex-col mx-auto gap-14 2xl:gap-18 items-center py-36 bg-linear-to-br from-[#71DAFE] to-[#3C94FF]">
+                <div class="flex flex-row mx-auto justify-center">
+                    <div class="bg-white rounded-full py-9 px-4 md:py-10 2xl:py-12 md:px-5 border-6 border-[#71DAFE] h-fit mt-5 z-10">
+                        <span class="text-[#141943] text-xl md:text-2xl 2xl:text-3xl font-semibold">You're</span>
                     </div>
-                    <svg class="-ml-5 block z-0" width="1101" height="319" viewBox="0 0 1101 319" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M274.765 318.941H206.803L67.4357 41.8746C66.9575 40.9447 66.0009 40.3486 64.9487 40.3486C62.3661 40.3486 60.2617 43.8775 60.2617 46.4526V318.965H0V73.3247C0 63.7156 4.80659 54.7265 12.7937 49.3616L79.0576 4.91645C93.5491 -4.78804 113.278 0.386097 121.121 15.9324L246.523 265.221"
-                            fill="white" />
-                        <path
-                            d="M138.359 0H205.84L344.244 277.111C344.719 278.041 345.669 278.637 346.714 278.637C349.278 278.637 351.368 275.108 351.368 272.533V0H411.203V245.635C411.203 255.245 406.43 264.235 398.5 269.6L332.705 314.048C318.316 323.754 298.727 318.579 290.939 303.032L166.425 53.7244"
-                            fill="white" />
-                        <path
-                            d="M560.155 318.091C539.615 318.091 521.669 314.575 506.259 307.542C490.868 300.51 478.11 291.037 467.984 279.162C457.858 267.287 450.23 254.01 445.119 239.349C439.989 224.688 437.414 209.739 437.414 194.483V186.124C437.414 170.291 439.97 155.035 445.119 140.374C450.249 125.713 457.877 112.512 467.984 100.791C478.11 89.0704 490.638 79.7513 505.586 72.8532C520.535 65.9743 537.847 62.5156 557.484 62.5156C583.289 62.5156 604.848 68.1648 622.14 79.4438C639.433 90.7421 652.557 105.557 661.511 123.868C670.445 142.199 674.922 161.914 674.922 183.031V205.032H495.441C497.497 223.804 503.723 238.907 514.137 250.34C524.551 261.773 539.865 267.499 560.097 267.499C574.758 267.499 586.863 264.501 596.393 258.487C605.924 252.473 612.015 245.075 614.647 236.275H670.945C665.661 260.908 653.191 280.699 633.554 295.668C613.898 310.617 589.418 318.11 560.097 318.11L560.155 318.091ZM557.504 113.108C540.191 113.108 526.415 117.95 516.154 127.615C505.894 137.299 499.284 150.635 496.364 167.64H616.453C614.109 150.635 608.018 137.28 598.199 127.615C588.362 117.931 574.816 113.108 557.504 113.108Z"
-                            fill="white" />
-                        <path
-                            d="M961.922 61.9868L1009.73 46.9609C1017.66 44.463 1023.08 37.1614 1023.18 28.8414L1023.48 0H962.383L961.922 61.9868Z"
-                            fill="white" />
-                        <path
-                            d="M1100.99 263.951L1082.87 319.001H1064.97C1037.12 318.559 1021.39 316.811 1006.03 310.72C990.683 304.628 979.327 294.349 971.968 279.938C964.609 265.526 960.92 245.793 960.92 220.718V115.843H892.036L851.936 185.439L939.861 319.001H868.614L806.34 221.179H799.289L740.454 319.001H673.281L754.174 188.264L678.488 62.311L749.62 61.9844L800.711 152.082H807.743L839.831 92.5935C849.899 73.936 869.383 62.311 890.576 62.311H922.894H922.875L1100.65 62.3302L1081.78 115.843H1022.02V224.945C1022.02 237.473 1025.38 247.119 1032.13 253.844C1038.85 260.588 1048.5 263.951 1061.03 263.951H1100.99Z"
-                            fill="white" />
-                    </svg>
-                    <!-- <img src="./img/LogoBig.png" class="-ml-4 block z-0" /> -->
+                    <img src="./img/nnextlogowhite.png" class="-ml-4 w-3/4 2xl:w-full block z-0" />
                 </div>
-                <p class="text-4xl font-medium text-center text-white max-w-3/5 leading-12">We combine strategy,
-                    creativity, and expertise to move your business forward — one powerful step at a time.</p>
-                <p class="font-[kalam] text-white font-semibold text-5xl">We’re always ready for you!</p>
+                <p class="text-2xl lg:text-3xl leading-10 2xl:text-4xl 2xl:leading-12 font-medium text-center text-white max-w-4/5 lg:max-w-3/5">
+                    We combine strategy, creativity, and expertise to move your business forward — one powerful step at a time.
+                </p>
+                <p class="font-[kalam] text-white font-semibold text-4xl 2xl:text-5xl">We’re always ready for you!</p>
                 <a class="bg-white px-5 py-3 flex flex-row gap-4 items-center rounded-full w-fit cursor-pointer">
                     <span class="text-[#3343C0] font-semibold text-lg">Let's chat over coffee</span>
                     <div class="bg-[#3343C0] rounded-full p-3">
@@ -375,7 +364,7 @@
             <div
                 class="mx-auto w-[92%] relative py-5 before:absolute before:h-full before:w-[2px] before:bg-white before:top-0 before:left-[1%] before:opacity-25 after:absolute after:h-full after:w-[2px] after:bg-white after:top-0 after:right-[1%] after:opacity-25">
                 <div class="border-t-3 border-b-3 border-[#ffffff33]">
-                    <div class="w-[90%] mx-auto flex flex-row gap-12 py-7 text-white text-lg">
+                    <div class="w-[90%] mx-auto flex flex-row gap-12 py-7 text-white text-md 2xl:text-lg">
                         <a href="#">Services</a>
                         <a href="#">Work</a>
                         <a href="#">About</a>
@@ -427,6 +416,44 @@
                 </div>
             </div>
         </section>
+
+        <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $('.autoplay').slick({
+                    slidesToShow: 4,
+                    slidesToScroll: 1,
+                    autoplay: true,
+                    autoplaySpeed: 1400,
+                    arrows: false,
+                    responsive: [
+                        {
+                            breakpoint: 1024,
+                            settings: {
+                                slidesToShow: 3,
+                                slidesToScroll: 1,
+                                infinite: true,
+                            }
+                        },
+                        {
+                            breakpoint: 640,
+                            settings: {
+                                slidesToShow: 2,
+                                slidesToScroll: 1,
+                                infinite: true,
+                            }
+                        }
+                        // You can unslick at a given breakpoint now by adding:
+                        // settings: "unslick"
+                        // instead of a settings object
+                    ]
+
+                });
+            }); 
+        </script>
     </body>
 
 </html>
