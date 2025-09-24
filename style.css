@@ -7,6 +7,7 @@
 
 body {
     font-family: sora;
+    max-width: 2560px;
 }
 
 img {
@@ -47,17 +48,19 @@ img[width][height] {
     border-style: initial;
 }
 
-.clipped {
-    -webkit-clip-path: url(#my-clip-path);
-    clip-path: url(#my-clip-path);
-}
-
-.sideways{
-    writing-mode: sideways-lr;
-        text-orientation: sideways;
-}
-
-.clipped2{
-    -webkit-clip-path: url(#my-clip-path2);
-        clip-path: url(#my-clip-path2);
+@media (width >= 640px) {
+    .clipped {
+            -webkit-clip-path: url(#my-clip-path);
+            clip-path: url(#my-clip-path);
+        }
+    
+        .sideways {
+            writing-mode: sideways-lr;
+            text-orientation: sideways;
+        }
+    
+        .clipped2 {
+            -webkit-clip-path: url(#my-clip-path2);
+            clip-path: url(#my-clip-path2);
+        }
 }
