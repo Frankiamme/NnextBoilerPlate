@@ -34,17 +34,17 @@ img[width][height] {
 }
 
 .bordersvg{
-    border-image: url("/img/Seperator.svg") 30 / 25px stretch;
+    border-image: url("./img/Seperator.svg") 30 / 25px stretch;
     /* border-style: initial; */
 }
 
 .borderWhite{
-    border-image: url("/img/SeperatorWhite.svg") 30 / 25px round;
+    border-image: url("./img/SeperatorWhite.svg") 30 / 25px round;
     border-style: initial;
 }
 
 .borderWhiteReversed {
-    border-image: url("/img/SeperatorWhiteUpside.svg") 30 / 25px round;
+    border-image: url("./img/SeperatorWhiteUpside.svg") 30 / 25px round;
     border-style: initial;
 }
 
